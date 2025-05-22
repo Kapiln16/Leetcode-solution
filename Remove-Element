@@ -1,0 +1,18 @@
+#Approach :
+k be var for indexing the array nums
+i are the elements of array nums
+iterate through array , if not equal to val copy k index and increment by 1 at last return k will give a new array without val
+
+#Time Complexity :
+o(1)
+
+
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        k = 0
+        for i in nums :
+            if i != val :
+                nums[k] = i
+                k += 1
+        return k
